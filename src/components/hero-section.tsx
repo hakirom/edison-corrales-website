@@ -25,12 +25,22 @@ export function HeroSection() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-            <a href="#contact" className="btn-primary">
+            <a
+              href="https://wa.me/573168315059"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary"
+            >
               {t.hero.ctaPrimary}
             </a>
-            <button className="btn-secondary">
+            <a
+              href={t.footer.linkedinUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-secondary"
+            >
               {t.hero.ctaSecondary}
-            </button>
+            </a>
           </div>
 
           <div className="grid grid-cols-3 gap-8 pt-12">

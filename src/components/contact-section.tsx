@@ -23,29 +23,22 @@ export function ContactSection() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setStatus("loading");
 
-    try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
+    // Create WhatsApp message with form data
+    const message = `¡Hola Edison! 👋\n\nMe gustaría conectar contigo:\n\n*Nombre:* ${formData.name}\n*Email:* ${formData.email}\n*Empresa:* ${formData.company}\n*Cargo:* ${formData.role}\n*Desafío:* ${formData.challenge}`;
 
-      if (response.ok) {
-        setStatus("success");
-        setFormData({ name: "", email: "", company: "", role: "", challenge: "" });
-        setTimeout(() => setStatus("idle"), 3000);
-      } else {
-        setStatus("error");
-        setTimeout(() => setStatus("idle"), 3000);
-      }
-    } catch {
-      setStatus("error");
-      setTimeout(() => setStatus("idle"), 3000);
-    }
+    // Encode message for URL
+    const encodedMessage = encodeURIComponent(message);
+
+    // Open WhatsApp with pre-filled message
+    window.open(`https://wa.me/573168315059?text=${encodedMessage}`, "_blank");
+
+    // Reset form and show success message
+    setStatus("success");
+    setFormData({ name: "", email: "", company: "", role: "", challenge: "" });
+    setTimeout(() => setStatus("idle"), 3000);
   };
 
   return (

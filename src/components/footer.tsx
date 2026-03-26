@@ -33,7 +33,7 @@ export function Footer() {
             <h4 className="font-bold mb-4">Conexiones</h4>
             <div className="space-y-2">
               <a
-                href="https://www.linkedin.com/in/edisoncorrales"
+                href={t.footer.linkedinUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm text-slate-400 hover:text-accent-500 transition block"
@@ -41,18 +41,18 @@ export function Footer() {
                 LinkedIn
               </a>
               <a
-                href="mailto:edison.corrales@gmail.com"
-                className="text-sm text-slate-400 hover:text-accent-500 transition block"
-              >
-                Email
-              </a>
-              <a
-                href="https://www.youtube.com/watch"
+                href={`https://wa.me/${t.footer.whatsappPhone.replace(/\D/g, "")}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm text-slate-400 hover:text-accent-500 transition block"
               >
-                YouTube
+                WhatsApp
+              </a>
+              <a
+                href="mailto:edison.corrales@gmail.com"
+                className="text-sm text-slate-400 hover:text-accent-500 transition block"
+              >
+                Email
               </a>
             </div>
           </div>

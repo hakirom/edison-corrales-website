@@ -81,6 +81,8 @@ export interface Translations {
     nav: Array<{ label: string; href: string }>;
     copyright: string;
     credentials: string;
+    linkedinUrl: string;
+    whatsappPhone: string;
   };
 }
 
@@ -99,7 +101,7 @@ const es: Translations = {
     title: "Transformación Digital y Liderazgo Estratégico para el Sector Financiero",
     subtitle:
       "Especialista en venta consultiva y transformación digital con 20+ años de experiencia. Lidero relaciones estratégicas con cuentas de alto impacto en finanzas, retail y seguros.",
-    ctaPrimary: "Agendar Consulta",
+    ctaPrimary: "Contactar por WhatsApp",
     ctaSecondary: "Ver LinkedIn",
     stats: [
       { label: "Años de Experiencia", value: "20+" },
@@ -289,9 +291,9 @@ const es: Translations = {
     ],
   },
   contact: {
-    title: "Agendar una Consulta Estratégica",
+    title: "Conectemos por WhatsApp",
     subtitle:
-      "30 minutos para explorar cómo puedo impulsar tu transformación digital",
+      "Cuéntame sobre tu proyecto y exploraremos cómo puedo impulsar tu transformación digital",
     ctaTitle: "¿Listo para avanzar?",
     formFields: {
       name: "Nombre completo",
@@ -299,11 +301,11 @@ const es: Translations = {
       company: "Empresa",
       role: "Cargo / Rol",
       challenge: "¿Cuál es tu mayor desafío actualmente?",
-      button: "Enviar Solicitud",
+      button: "Contactar por WhatsApp",
     },
-    successMessage: "¡Gracias! Te contactaré en las próximas 24 horas.",
+    successMessage: "¡Gracias! Serás redirigido a WhatsApp.",
     errorMessage:
-      "Error al enviar. Por favor, intenta de nuevo.",
+      "Error. Por favor, intenta nuevamente.",
   },
   footer: {
     nav: [
@@ -317,6 +319,8 @@ const es: Translations = {
       "© 2026 Edison Corrales. Todos los derechos reservados.",
     credentials:
       "20+ años de experiencia en liderazgo estratégico, venta consultiva y transformación digital | SR Client Manager, Banking Sector | NTT DATA",
+    linkedinUrl: "https://www.linkedin.com/in/edisoncorrales/?locale=es_ES",
+    whatsappPhone: "+573168315059",
   },
 };
 
@@ -335,7 +339,7 @@ const en: Translations = {
     title: "Digital Transformation and Strategic Leadership for Financial Services",
     subtitle:
       "Specialist in consultative selling and digital transformation with 20+ years of experience. Leading strategic partnerships with high-impact accounts in finance, retail, and insurance.",
-    ctaPrimary: "Schedule Consultation",
+    ctaPrimary: "Contact via WhatsApp",
     ctaSecondary: "View LinkedIn",
     stats: [
       { label: "Years of Experience", value: "20+" },
@@ -524,9 +528,9 @@ const en: Translations = {
     ],
   },
   contact: {
-    title: "Schedule a Strategic Consultation",
+    title: "Let's Connect via WhatsApp",
     subtitle:
-      "30 minutes to explore how I can drive your digital transformation",
+      "Tell me about your project and we'll explore how I can drive your digital transformation",
     ctaTitle: "Ready to move forward?",
     formFields: {
       name: "Full Name",
@@ -534,12 +538,12 @@ const en: Translations = {
       company: "Company",
       role: "Role / Title",
       challenge: "What's your biggest challenge right now?",
-      button: "Send Request",
+      button: "Contact via WhatsApp",
     },
     successMessage:
-      "Thank you! I'll contact you within 24 hours.",
+      "Thank you! You'll be redirected to WhatsApp.",
     errorMessage:
-      "Error sending request. Please try again.",
+      "Error. Please try again.",
   },
   footer: {
     nav: [
@@ -553,6 +557,8 @@ const en: Translations = {
       "© 2026 Edison Corrales. All rights reserved.",
     credentials:
       "20+ years of experience in strategic leadership, consultative sales, and digital transformation | SR Client Manager, Banking Sector | NTT DATA",
+    linkedinUrl: "https://www.linkedin.com/in/edisoncorrales/?locale=es_ES",
+    whatsappPhone: "+573168315059",
   },
 };
 
